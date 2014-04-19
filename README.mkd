@@ -1,0 +1,10 @@
+docker-archlinux-texlive
+========================
+
+Manually Build
+--------------
+```
+$ git clone https://github.com/Lance0312/docker-archlinux-texlive.git
+$ cd docker-archlinux-texlive
+$ docker build -t archlinux-texlive .
+```
