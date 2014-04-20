@@ -10,5 +10,8 @@ RUN rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist
 # Update pacman database
 RUN pacman -Sy
 
+# Install some general packages
+RUN pacman -S --quiet --noconfirm make git openssh
+
 # Install texlive-related packages
 RUN pacman -S --quiet --noconfirm texlive-most texlive-langcjk
